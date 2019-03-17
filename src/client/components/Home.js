@@ -4,7 +4,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        Hello ! Welcome Home
+        <a className="btn btn-primary btn-lg" href="/createEmployee">CreateEmployee</a>
       </div>
     )
   }
