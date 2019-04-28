@@ -11,8 +11,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "node_modules/*",
-      "src/client"
+      "node_modules/*"
     ],
     "delay": "2500"
   },
