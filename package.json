@@ -7,7 +7,8 @@
     "build": "rm -rf dist && webpack --mode development",
     "start": "npm run build && nodemon server.js",
     "inspect": "nodemon --inspect ./server.js 80",
-    "babel": "babel src/client -d dist"
+    "babel": "babel src/client -d dist",
+    "watch": "webpack --watch --mode development"
   },
   "nodemonConfig": {
     "ignore": [
@@ -22,6 +23,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "mongodb": "^3.1.13",
+    "multer": "^1.4.1",
+    "multer-gridfs-storage": "^3.2.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^6.0.1",

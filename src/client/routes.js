@@ -1,10 +1,10 @@
-import { homeHTML,empFormHTML } from './renderService';
+import { homeHTML,tripFromHTML } from './renderService';
 function routes(app) {
     app.get('/', (req, res) => {
         res.send(homeHTML());
     });
-    app.get('/createEmployee', (req, res) => {
-        res.send(empFormHTML());
+    app.get('/createTrip', (req, res) => {
+        res.send(tripFromHTML());
     });
 }
 
